@@ -1,0 +1,116 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(249, 255, 214); */
+    background-image: url(bgimg.jpg);
+    background-position: center;
+    /* backdrop-filter: blur(2.1px); */
+    background-repeat: no-repeat;
+}
+
+#container{
+     background-color:rgb(1, 1, 1);
+     border-radius: 7px;
+     box-shadow:7px 7px 27px rgb(0, 0, 0);
+}
+
+.clickable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 139, 149);
+    height: 70px;
+    width: 70px;
+    border-radius: 7px;
+    font-family: monospace;
+    font-size:3.5em;
+    font-weight:bolder;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, 
+                transform 0.3s ease-in-out,
+                box-shadow 0.3s ease-in-out,
+                color 0.3s ease-in-out;
+}
+
+
+#row0{
+     display: flex;
+     margin-bottom: 7px;
+}
+#row1{
+     display: flex;
+     margin-bottom: 7px;
+}
+#row2{
+     display: flex;
+}
+ #btn00{
+     margin-right: 7px;
+}
+ #btn01{
+     margin-right: 7px;
+}
+ #btn10{
+     margin-right: 7px;
+}
+ #btn11{
+     margin-right: 7px;
+}
+ #btn20{
+     margin-right: 7px;
+}
+#btn21{
+     margin-right: 7px;
+}
+
+.clickable:hover{
+     background-color: rgb(161, 232, 234);
+     transform: scale(1.1);
+     box-shadow: 0px 0px 12px black;
+}
+
+.clickable:active{
+      background-color: black;
+     transition-duration: 0ms; 
+     /* //fix is in js using key press and key out or whatg so ever it is */
+}
+
+label {
+     margin:27px;
+     font-size: 2.5em;
+     color:rgb(0, 127, 53);
+     text-align: center;
+     font-family:'Courier New', Courier, monospace;
+     font-weight:bolder;
+     /* background-color: rgba(116, 108, 98, 0.7); */
+     padding:5px 12px;
+     border-radius: 5px;
+     backdrop-filter: blur(16px);
+     box-shadow:3px 3px 7px black;
+     border:1px solid white;
+}
+
+#replay{
+     font-size:1.2em;
+     font-weight: bolder;
+     font-family: 'Courier New', Courier, monospace;
+     background-color: yellow;
+     padding: 3px 12px;
+     border-radius: 5px;
+     margin-top: 7px;
+
+}
+
+#replay:hover{
+     background-color: rgb(197, 197, 4);
+     transform: scale(1.2);
+}
+
+#replay:active{
+     background-color: rgb(0, 0, 0);
+     color:rgb(255, 255, 255);
+}
