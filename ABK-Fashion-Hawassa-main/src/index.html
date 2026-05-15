@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="mx-auto max-w-7xl px-4">
+        <!--start of nav-->
+        <nav class="flex justify-center h-15 md:h-25 lg:h-20 items-center bg-black fixed top-0 right-0 left-0 z-1000 mb-20 md:mb-20">
+            <div class="w-[90vw] lg:flex lg:justify-between  lg:items-baseline">
+                <!--header-->
+                <div class=" flex  justify-between md:relative md:justify-center lg:h-2 lg:flex-1 lg:justify-start lg:w-[50%] ">
+                    <div class="flex justify-center items-center gap-6 lg:pt-5 hover:scale-[1.05] cursor-pointer" >
+                        <!--logo-->
+                        <a href="#Home" class="flex items-center gap-3 md:pb-5">
+                        <div class="flex border border-bpink w-7 h-14 justify-center items-center rotate-45 scale-y-50">
+                            <div class="bg-bpink w-1 h-1 rounded-full"></div>
+                        </div>
+                        <!--brand name-->
+                        <div>
+                            <p class="text-[28px] font-extrabold bg-linear-to-r from-white to-bpink bg-clip-text text-transparent">ABK</p>
+                        </div>   
+                        </a>
+                    </div>
+                    <!--bar icon-->
+                    <button id="menuBtn" class="md:hidden border-none cursor-pointer text-[23px]"><i  class=" fa-solid fa-bars "></i></button>
+                </div>
+                <!--end of header-->
+                <!--nav links-->
+                <div id="menu" class="hidden flex absolute text-2xl bg-black  w-full py-58 gap-5 flex-col md:flex md:items-center md:bg-transparent md:h-auto md:overflow-visible md:flex-row md:justify-evenly md:mt-3 lg:justify-around md:mb-5 md:text-sm md:fixed md:top-[-185px] md:left-[-10px] lg:w-[50%] md:gap-3 lg:relative lg:top-0 ">
+                    <a href="#Home" class="flex-1 text-center px-1 hover:text-bpink md:hover:text-white md:hover:bg-bpink transition-colors">HOME</a>
+                    <a href="#Collection" class="flex-1 text-center px-1 hover:text-bpink md:hover:text-white md:hover:bg-bpink transition-colors">COLLECTION</a>
+                    <a href="#Featured" class="flex-1 text-center px-1 hover:text-bpink md:hover:text-white md:hover:bg-bpink transition-colors">FEATURED</a>
+                    <a href="#contact" class="flex-1 text-center px-1 hover:text-bpink md:hover:text-white md:hover:bg-bpink transition-colors">CONTACT</a>
+                    <a href="#contact" class="hidden md:flex bg-bpink md:py-2 md:px-7 md:rounded-3xl hover:bg-bpink-100 md:cursor-pointer whitespace-nowrap">GET IN TOUCH</a>
+                </div>
+                <!--end of nav links-->
+            </div>
+        </nav>
+        <!--end of nav-->
+        <!--mani-->
+        <main class="md:mt-12">
+            <!--Home-->
+            <section id="Home" class="flex scroll-mt-20 flex-col mb-5 mt-20 md:mt-20 md:flex-row relative overflow-hidden z-50">
+                <div class="home-bg"></div>
+                <div class="flex lg:flex-row justify-center gap-4 md:gap-20">
+                    <div class="flex-col text-center px-3 py-2 z-1000 md:text-start">
+
+                        <button class="text-bpink text-[13px] px-9 py-1 border-bpink border mb-5  md:hidden md:border-none">NEW COLLECTION 2025</button>
+                        <h1 class="md:text-7xl lg:text-8xl font-extrabold mb-5 mt-5">Redefine<br> Your<span class="text-bpink  italic"> Style</span> <br>Revolution</h1>
+
+                        <p class="text-[min(50vw,18px)] mb-15 text-[#969696] w-[10v,150] ">
+                            Discover our avant-grade collection where high fashion meets street 
+                            culture. Each piece tells a story of rebellion, elegance, and innovation.
+                        </p>
+                        <div class="flex justify-around md:justify-between mdp: mb-10 w-full">
+                            <!--single stat-->
+                            <div>
+                                <p class="text-pinkpg">500+</p>
+                                <p>EXCLUSIVE PIECES</p>
+                            </div>
+                            <!--end of single stat-->
+                            <!--single stat-->
+                            <div>
+                                <p class="text-pinkpg">48H</p>
+                                <p>FAST DELIVERY</p>
+                            </div>
+                            <!--end of single stat-->
+                            <!--single stat-->
+                            <div>
+                                <p class="text-pinkpg">100%</p>
+                                <p>SUSTAINABLE</p>
+                            </div>
+                            <!--end of single stat-->
+                        </div>
+                        <div class="flex gap-2 flex-col items-center md:flex-row">
+                            <button class="py-3 bg-bpink shadow-bpink-100 transition-shdow hover:shadow-[0_0_20px] cursor-pointer text-[10vw,10px] border-none">EXPLORE COLLECTION</button>
+                            <button class="px-11 py-3 hover:bg-white-100 cursor-pointer transition-discrete hover:scale-[0.99]">WATCH RUNWAY</button>
+                        </div>
+                    </div>
+                    <img id="slider" class="md:text-center overflow-hidden rounded-3xl z-1000 h-0 md:h-150 md:w-[80%] object-cover" src="./images/noir-fashion-hero-02.avif">
+                </div>
+            </section>
+            <!--end of Home-->
+            <!--Collection-->
+            <section id="Collection" class="flex scroll-mt-20 flex-col mt-5 text-center mb-5 p-8 ">
+            <h1>Latest Collecions</h1>
+            <p class="mb-15 text-[22px] font-extralight">DISCOVER OUR CURATED SELECTION</p>
+            <div class="mb-10 flex gap-6 text-center justify-center flex-wrap">
+                <button class="px-6 py-1 font-light text-[15px] bg-bpink border-none">ALL</button>
+                <button class="px-6 py-1 font-light text-[15px] hover:bg-bpink hover:border-none">WOMEN</button>
+                <button class="px-6 py-1 font-light text-[15px] hover:bg-bpink hover:border-none">MEN</button>
+                <button class="px-6 py-1 font-light text-[15px] hover:bg-bpink hover:border-none">ACCESSORIES</button>
+                <button class="px-6 py-1 font-light text-[15px] hover:bg-bpink hover:border-none">LIMITED EDITION</button>
+            </div>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink group-hover:scale-[1.05]">
+                    <div class="w-full overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/urban-edge.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>NEW ARRIVAL</mark>
+                        <h3>Urban Edge</h3>
+                        <p class="text-[11px]">WOMEN'S COLLECTION</p>
+                        <p class="text-lg text-bpink font-semibold">From $299</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink">
+                    <div class="w-full overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/midnight-luxe.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>LIMITED</mark>
+                        <h3>Midnight Luxe</h3>
+                        <p>EXCLUSIVE DROP</p>
+                        <p class="text-lg text-bpink font-semibold">From $899</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink">
+                    <div class="h-[65%] overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/neo-classic.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>BESTSELLER</mark>
+                        <h3>Neo Classic</h3>
+                        <p>MEN'S ESSENTIALS</p>
+                        <p class="text-lg text-bpink font-semibold">From $399</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink">
+                    <div class="h-[65%] overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/accent-pieces.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>TRENDING</mark>
+                        <h3>Accent Pieces</h3>
+                        <p>ACCESSORIES</p>
+                        <p class="text-lg text-bpink font-semibold">From $149</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink">
+                    <div class="h-[65%] overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/spring-bloom.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>PRE-ORDER</mark>
+                        <h3>Spring Bloom</h3>
+                        <p>WOMEN'S SPRING</p>
+                        <p class="text-lg text-bpink font-semibold">From $249</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink">
+                    <div class="h-[65%] overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/street-rebel.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>HOT</mark>
+                        <h3>Street Rebel</h3>
+                        <p>MEN'S STREETWEAR</p>
+                        <p class="text-lg text-bpink font-semibold">From $199</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink">
+                    <div class="h-[65%] overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/avant-garde.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>EXCLUSIVE</mark>
+                        <h3>Avant Grade</h3>
+                        <p>ART MEETS FASHION</p>
+                        <p class="text-lg text-bpink font-semibold">From $1,299</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                <!--single collection-->
+                <div class="group rounded-lg overflow-hidden cursor-pointer shadow-lg transition-shadow hover:shadow-bpink">
+                    <div class="h-[65%] overflow-hidden">
+                        <img class="collection-card-img transition-transform group-hover:scale-[1.09] group-hover:opacity-[1]" src="./images/minimal-chic.avif">
+                    </div>
+                    <div class="collection-card-content">
+                        <mark>ESSENTIALS</mark>
+                        <h3>Minimal Chic</h3>
+                        <p>TIMELESS ACCESSORIES</p>
+                        <p class="text-lg text-bpink font-semibold">From $89</p>
+                    </div>   
+                </div>
+                <!--end of single collection-->
+                
+            </div>
+            </section>
+            <!--end of Collection-->
+            <!--Featured-->
+            <section id="Featured" class="flex scroll-mt-20 flex-col mt-5 md:gap-12 p-8 bg-[#0b0a0a] md:flex-row md:items-center">
+                <div class="md:max-w-[50%] flex-nowrap " >
+                    <h3 class="text-[15px] font-light mb-5 text-bpink font-sans">CRAFTED WITH PASSION</h3>
+                    <h1 class="text-3xl md:text-5xl">The Art of Fashion</h1>
+                    <p>
+                        Where tradition meets innovation. Our master craftsmen blend centureis-old techniques with 
+                        cutting-edge design to create that transcend time and trends. This template is proudly 
+                        crafted by Template, featureing beautiful imagery from Unsplash.
+                    </p>
+                    <div class="flex gap-4 mb-5 mt-5">
+                        <!--single featured content-->
+                        <div class="featured-content shadow-sm transition-shadow hover:shadow-bpink hover:scale-[1.03]">
+                            <i class="flex fa-solid fa-crown justify-center items-center w-15 h-15 rounded-full bg-bpink text-yellow-400 text-2xl "></i>
+                            <h3 >Premium Quality</h3>
+                            <p>only the finest materials and fabrics make it into our collections</p>
+                        </div>
+                        <!--end of single featured content-->
+                        <!--single featured content-->
+                        <div  class="featured-content shadow-sm transition-shadow hover:shadow-bpink hover:scale-[1.03]">
+                            <i class="flex fa-solid fa-leaf w-15 h-15 justify-center items-center rounded-full bg-bpink text-green-800 text-3xl" ></i>
+                            <h3>Sustainable</h3>
+                            <p>Ethically sourced materials with carbon-neutral production</p>
+                        </div>
+                        <!--end of single featured content-->
+                        <!--single featured content-->
+                        <div  class="featured-content shadow-sm transition-shadow hover:shadow-bpink hover:scale-[1.03]">
+                            <i class="flex fa-solid fa-star w-15 h-15 justify-center items-center rounded-full bg-bpink text-blue-600 text-2xl" ></i>
+                            <h3>Handcrafted</h3>
+                            <p>Each piece is carefully crafted by skilled artisans</p>
+                        </div>
+                        <!--end of single featured content-->
+                    </div>
+                    <button class="mt-5 bg-bpink border-none font-semibold shadow-lg transition-shadow hover:shadow-bpink-100 hover:scale-[1.03]">DISCOVER OUR CRAFT</button>
+                </div>
+                <div class="flex rounded-lg overflow-hidden h-0 md:h-120 md:w-[50%] ">
+                    <div class="w-[60%] overflow-hidden"><img class="object-fill h-full w-full" src="./images/art-of-fashion-01.avif"></div>
+                    <div class="flex-1 h-full overflow-hidden">
+                        <img class="h-[50%]" src="./images/art-of-fashion-02.avif">
+                        <img class="h-[50%]" src="./images/art-of-fashion-03.avif">
+                    </div>
+                </div>
+            </section>
+            <!--end of Featured-->
+            <!--Testimony-->
+            <section class="flex scroll-mt-20 flex-col text-center pb-30  p-8 bg-[#0b0a0a]">
+            <h1 class="text-3xl">What Our Customers Say</h1>
+            <p class="mb-5 text-[20px] font-extraligh">REAL STORIES FROM FASHION ENTUSIASTS</p>
+            <div class="grid grid-cols-1 gap-4 mt-5 sm:grid-cols-2 lg:grid-cols-3">
+                <!--single testimony-->
+                <div class="flex bg-[#251d1d] flex-col rounded-xl px-10 py-5  transition-colors hover:bg-white-200 hover:scale-[1.05]">
+                    <div class="text-end text-3xl text-bpink">*****</div>
+                    <p class="italic mb-5 text-white">
+                        "ABK has completely transformed my wardrobe.
+                        The quality and attention to detail is unmatched.
+                        Every piece feels like a work of art."
+                    </p>
+                    <div class="flex gap-3">
+                        <div class="testimony-name-initial">S</div>
+                        <div>
+                            <h3>Bekam Dawit</h3>
+                            <p> Fashion Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end of single testimony-->
+                <!--single testimony-->
+                <div class="flex bg-[#251d1d] flex-col rounded-xl px-10 py-5 transition-colors hover:bg-white-200 hover:scale-[1.05]">
+                    <div class="text-end text-3xl text-bpink">*****</div>
+                    <p class="italic mb-5  text-white">
+                        "The sustainable approach combined with luxury
+                        design is exactly what i was looking for.ABk
+                        proves you don't have to compromise."
+                    </p>
+                    <div class="flex gap-3">
+                        <div class="testimony-name-initial">M</div>
+                        <div>
+                            <h3>Daniel Habtamu</h3>
+                            <p>Creative Director</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end of single testimony-->
+                <!--single testimony-->
+                <div class="flex bg-[#251d1d] flex-col rounded-xl px-10 py-5 transition-colors hover:bg-white-200 hover:scale-[1.05]">
+                    <div class="text-3xl text-bpink text-end">*****</div>
+                    <p class="italic mb-5  text-white">
+                        "I've been a customer for three years now, and 
+                        each collection keeps exceeding my 
+                        expectations.The fit and quality are consistently outstanding."
+                    </p>
+                    <div class="flex gap-3">
+                        <div class="testimony-name-initial">A</div>
+                        <div>
+                            <h3>Yonas Moh</h3>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end of single testimony-->
+            </div>
+            </section>
+            <!--end of Testimony-->
+            <!--Contact-->
+            <section id="contact" class="flex scroll-mt-20 flex-col text-center  mb-5 p-8 bg-[#0b0a0a]">
+            <h1>Get In Touch</h1>
+            <p class="mb-10 text-[20px] font-extraligh">WE'D LOVE TO HEAR FROM YOU</p>
+            <div class="flex flex-col  md:flex-row md:gap-12 md:items-start">
+                <form class="flex flex-1 flex-col bg-[#241c1c]  h-175 rounded-lg p-8 mb-5 md:w-1/2">
+                    <!--single form row-->
+                    <div class="form-format md:flex">
+                        <label for="Fname" class="text-[#969696]">FIRST NAME</label>
+                        <input class="bg-[#382d2d] h-12 mb-5 placeholder:p-5" type="text" name="Fname" placeholder="John"/>
+                        <label for="Lname" class="text-[#969696]">LAST NAME</label>
+                        <input class="bg-[#382d2d] h-12 placeholder:p-5"  type="text" name="Fname" placeholder="Doe"/>
+                    </div>
+                    <!--end of single form row-->
+                    <!--single form row-->
+                    <div class="form-format">
+                        <label for="email" class="text-[#969696]">EMAIL</label>
+                        <input class="bg-[#382d2d] h-12 placeholder:p-5"  type="text" name="email" placeholder="john@example.com"/>
+                    </div>
+                    <!--end of single form row-->
+                    <!--single form row-->
+                    <div class="form-format">
+                        <label for="subject" class="text-[#969696]">SUBJECT</label>
+                        <input class="bg-[#382d2d] h-12 p-5"  type="text" name="subject" placeholder="How can we help?"/>
+                    </div>
+                    <!--end of single form row-->
+                    <!--single form row-->
+                    <div class="form-format mb-5">
+                        <label for="message" class="text-[#969696]">MESSAGE</label>
+                        <textarea class="bg-[#312626] h-30 placeholder:p-5"  type="textarea" name="message" placeholder="Tell us more about your inquiry..."></textarea>
+                    </div>
+                    <!--end of single form row-->
+                    <button class="bg-bpink border-none font-bold shadow-bpink-100 transition-shdow hover:shadow-[0_0_20px] ">SEND MESSAGE</button>
+                </form>
+                <div class="flex-1 bg-[rgb(27,17,17)] px-5 py-8 rounded-lg  ">
+                    <!--single contact content-->
+                    <div class="flex gap-3 mb-10 text-start hover:scale-x-[0.95]">
+                        <i class="flex fa-sharp fa-solid fa-map-pin justify-center items-center w-15 h-15 bg-bpink rounded-xl text-3xl"></i>
+                        <div class="space-y-2">
+                            <h3 mb-2>VIST OUR FLAGSHIP STORE</h3>
+                            <p>ABK Fashion Avenue</p>
+                            <p>Hawassa, Ethiopia</p>
+                            <p>Piasa street 05</p>
+                        </div>
+                    </div>
+                    <!--end of single contact content-->
+                    <!--single contact content-->
+                    <div class="flex gap-3 mb-10 text-start hover:scale-x-[0.95]">
+                        <i class="flex fa-solid fa-phone w-15 h-15 justify-center items-center bg-bpink rounded-xl text-3xl"></i>
+                        <div class="space-y-2">
+                            <h3 class="mb-2">CALL US</h3>
+                            <p>Main:<span class="text-bpink cursor-pointer">+251924586753</span></p>
+                            <p>Support:<span class="text-bpink cursor-pointer">+251919974810</span></p>
+                            
+                        </div>
+                    </div>
+                    <!--end of single contact content-->
+                    <!--single contact content-->
+                    <div class="flex gap-3 mb-10 text-start hover:scale-x-[0.95]">
+                        <i class="flex fa-sharp fa-solid fa-envelope w-15 h-15 justify-center items-center bg-bpink rounded-xl text-3xl"></i>
+                        <div class="space-y-2">
+                            <h3 class="mb-2">EMAIL US</h3>
+                            <p>General:<span class="text-bpink cursor-pointer">abrishkok@gmail.com</span></p>
+                            <p>Support:<span class="text-bpink cursor-pointer">abbkkokpay@gmail.com</span></p>
+                           
+                        </div>
+                    </div>
+                    <!--end of single contact content-->
+                </div>
+            </div>
+            </section>
+            <!--end of Contact-->
+        </main>
+        <!--end of main-->
+        <!--footer-->
+        <footer class="flex flex-col px-3  bg-[#000000] mt-5 md:flex-row ">
+        <div class="p-10">
+            <div class="mb-20  md:flex md:gap-8 md:items-center">
+                <!--single footer content-->
+                <div class="md:flex-2">
+                    <h1 class="text-3xl">ABK</h1>
+                    <p class="mb-5">Redefining fashion with bold designs, sustainable practices, and uncompromising quality.Join us in creating the future of style</p>
+                    <div class="flex gap-4 mb-5">
+                        <p class="flex w-10 h-10 rounded-full items-center justify-center  border hover:bg-bpink hover:border-none hover:scale-[0.9] cursor-pointer">f</p>
+                        <p class="flex w-10 h-10 rounded-full items-center justify-center  border hover:bg-bpink hover:border-none hover:scale-[0.9] cursor-pointer">t</p>
+                        <p class="flex w-10 h-10 rounded-full items-center justify-center  border hover:bg-bpink hover:border-none hover:scale-[0.9] cursor-pointer">i</p>
+                        <p class="flex w-10 h-10 rounded-full items-center justify-center  border hover:bg-bpink hover:border-none hover:scale-[0.9] cursor-pointer">p</p>
+                    </div>
+                </div>
+                <!--end of single footer content-->
+                <!--single footer content-->
+                <div class="mt-10 space-y-3 md:flex-1">
+                    <h3 class="mb-5">SHOP</h3>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">New Arrivals</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Women</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Men</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Accessories</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Sale</p>
+                </div>
+                <!--end of single footer content-->
+                <!--single footer content-->
+                <div class="mt-10 space-y-3 md:flex-1">
+                    <h3 class="mb-5">SUPPORT</h3>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Contact Us</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Size Guide</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Shipping Info</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Returns</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">FAQ</p>
+                </div>
+                <!--end of single footer content-->
+                <!--single footer content-->
+                <div class="mt-10 space-y-3 md:flex-1">
+                    <h3 class="mb-5">COMPANY</h3>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer ">About Us</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Careers</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Press</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Sustainability</p>
+                    <p class="hover:text-bpink hover:scale-[0.9] cursor-pointer">Terms</p>
+                </div>
+                <!--end of single footer content-->
+            </div>
+            <hr class="mb-5 text-[#201f1f]">
+            <div class="flex flex-col justify-between md:flex-row">
+                <p class="mb-3 text-center">@2025 ABk.All Rights reserved | Designed by <span class="text-bpink">Rehobot </span></p>
+                <div class="flex gap-5 px-3 items-center justify-center">
+                    <button class="px-2 py-1.5 text-[10px] bg-[#201f1f] border-none rounded-sm text-[#969696]">VISA</button>
+                    <button class="px-2 py-1.5 text-[10px] bg-[#201f1f] border-none rounded-sm text-[#969696]">MC</button>
+                    <button class="px-2 py-1.5 text-[10px] bg-[#201f1f] border-none rounded-sm text-[#969696]">AMEX</button>
+                    <button class="px-2 py-1.5 text-[10px] bg-[#201f1f] border-none rounded-sm text-[#969696]">PAY</button>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <script>
+        const btn=document.getElementById("menuBtn");
+        const menu=document.getElementById("menu");
+        btn.addEventListener("click",()=>{
+            menu.classList.toggle("hidden");
+        });
+        document.querySelectorAll("#menu a").forEach(link=>{
+            link.addEventListener("click", ()=>{
+                menu.classList.add("hidden");
+            });
+        });
+        const img=["./images/noir-fashion-hero-02.avif" ,"./images/noir-fashion-hero-01.avif" ,"./images/noir-fashion-hero-03.avif"];
+        let i=0;
+        setInterval(()=>{
+            i=(i+1)% img.length;
+            document.getElementById("slider").src=img[i];
+        },4000);
+    </script>
+</body>
+</html>

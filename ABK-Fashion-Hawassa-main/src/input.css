@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+body{
+    color:white;
+    background: black;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+.home:hover{
+    background-color: #4f2e39;
+}
+@theme{
+    --color-bpink:#de4669;
+    --color-bpink-100:#d52551;
+    --color-white-100:rgba(255,255,255,0.08);
+    --color-white-200:#4f2e39;
+}
+@layer base{
+    button{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border:1px solid white;
+    }
+    h1{
+        @apply text-5xl font-bold mb-5;
+    }
+    h3{
+        @apply text-[18px] font-semibold;
+    }
+    mark{
+        @apply bg-bpink text-[10px] px-3 py-1 text-white font-semibold;
+    }
+    p{
+        @apply text-[14px] text-[#969696];
+    }
+}
+@layer components{
+    .text-pinkpg{
+        @apply text-bpink font-extrabold text-3xl mb-2;
+    }
+    /*collection single-collecion first div*/
+    .collection-card-img{
+        @apply opacity-[0.4] w-full h-65 object-cover;
+    }
+    /*collection single-collection second div*/
+    .collection-card-content{
+        @apply text-start p-5;
+    }
+    .featured-content{
+        @apply flex flex-col gap-2 h-85 bg-[#1c1616] rounded-lg text-center items-center p-2 pt-5;
+    }
+    .testimony-name-initial{
+        @apply bg-bpink w-13 h-13 rounded-full flex items-center justify-center font-bold;
+    }
+    /*this is for individual form row div*/
+    .form-format{
+        @apply flex flex-col text-start gap-2 mb-5;
+    }
+    /*home background */
+    .home-bg::before {
+    	content: '';
+    	position: absolute;
+    	width: 150%;
+    	height: 150%;
+    	top: -25%;
+    	left: -25%;
+    	background: conic-gradient(from 180deg at 50% 50%, #ff3366 0deg, #000 60deg, #ff3366 120deg, #000 180deg, #ff3366 240deg, #000 300deg, #ff3366 360deg);
+    	animation: spin 20s linear infinite;
+    	opacity: 0.15;
+    }
+
+    .home-bg::after {
+    	content: '';
+    	position: absolute;
+    	width: 150%;
+    	height: 150%;
+        background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    }
+    @keyframes spin {
+	    from {
+	    	transform: rotate(0deg);
+	    }
+
+	    to {
+	    	transform: rotate(360deg);
+	    }
+    }
+}
