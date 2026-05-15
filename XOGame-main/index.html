@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OX Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label id="lbl1"></label>
+    <div id="container">
+        <div id="row0">
+            <div class="clickable" id="btn00" onclick="markBox(0,0)"></div>
+            <div class="clickable" id="btn01" onclick="markBox(0,1)"></div>
+            <div class="clickable" id="btn02" onclick="markBox(0,2)"></div>
+        </div>
+        
+        <div id="row1">
+            <div class="clickable" id="btn10" onclick="markBox(1,0)"></div>
+            <div class="clickable" id="btn11" onclick="markBox(1,1)"></div>
+            <div class="clickable" id="btn12" onclick="markBox(1,2)"></div>
+        </div>
+
+        <div id="row2">
+             <div class="clickable"  id="btn20" onclick="markBox(2,0)"></div>
+             <div class="clickable"  id="btn21" onclick="markBox(2,1)"></div>
+             <div class="clickable"  id="btn22" onclick="markBox(2,2)"></div>
+        </div>
+    </div>
+
+    <label id="lbl">Player X, please begin the game.</label>
+    <button id="replay">Replay</button>
+    <script src="script.js"></script>
+</body>
+</html>
